@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Hobson's Deli &amp; Café</title>
+<style>
+  :root{ --bg:#f7f2e4; --ink:#2f2a20; --soft:#6e6552; --accent:#3f5d3a; --accent2:#cf9a32; --card:#fffdf6; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+  header{ display:flex; justify-content:space-between; align-items:center; padding:18px 28px; border-bottom:2px solid var(--accent2); }
+  header .logo{ font-size:24px; font-weight:bold; letter-spacing:1px; color:var(--accent); }
+  header nav a{ color:var(--soft); text-decoration:none; margin-left:18px; font-size:15px; }
+  header nav a:hover{ color:var(--accent); }
+  .hero{ text-align:center; padding:46px 24px 24px; }
+  .hero h1{ font-size:42px; color:var(--accent); }
+  .hero p{ color:var(--soft); font-size:18px; }
+  .draft{ max-width:760px; margin:0 auto; padding:14px 22px; background:#fbf3d9; border:1px solid var(--accent2); border-radius:12px; color:var(--soft); font-size:14px; font-style:italic; text-align:center; }
+  section{ max-width:760px; margin:0 auto; padding:26px 24px; }
+  h2{ color:var(--accent); font-size:26px; margin-bottom:6px; border-bottom:2px solid var(--accent2); padding-bottom:8px; }
+  .sub{ color:var(--soft); font-style:italic; margin:14px 0 8px; font-size:16px; }
+  .row{ display:flex; justify-content:space-between; align-items:baseline; padding:9px 0; border-bottom:1px dotted #e3dac0; }
+  .name{ display:flex; flex-direction:column; padding-right:16px; }
+  .name b{ font-size:17px; font-weight:bold; }
+  .name .desc{ font-size:14px; color:var(--soft); font-style:italic; }
+  .price{ color:var(--accent); font-weight:bold; font-size:16px; white-space:nowrap; }
+  .note{ max-width:760px; margin:0 auto; padding:16px 24px; color:var(--soft); font-size:14px; font-style:italic; text-align:center; }
+  .back{ text-align:center; padding:36px 24px; }
+  .back a{ display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:14px 30px; border-radius:30px; font-size:17px;
+    box-shadow:0 5px 0 #2c4129; transition:transform .1s ease, box-shadow .1s ease, background .2s ease; }
+  .back a:hover{ background:#4b6e44; transform:translateY(-2px); box-shadow:0 7px 0 #2c4129; }
+  .back a:active{ transform:translateY(4px); box-shadow:0 1px 0 #2c4129; }
+  footer{ background:#2c4129; color:#e8e3cf; text-align:center; padding:30px 24px; font-size:15px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Hobson's Deli &amp; Café</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Our Menu</h1>
+    <p>Everything homemade &middot; deli counter &amp; café kitchen</p>
+  </div>
+
+  <p class="draft">Sample menu &mdash; dishes and prices to be confirmed by Hobson's before this goes live.</p>
+
+  <section>
+    <h2>Breakfast</h2>
+    <p class="sub">Served 9am &ndash; 12 noon</p>
+    <div class="row"><span class="name"><b>Full English Breakfast</b><span class="desc">bacon, sausage, egg, beans, tomato, mushrooms &amp; toast</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Bacon or Sausage Bap</b><span class="desc">in a fresh bap &middot; add egg</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Eggs on Toast</b><span class="desc">poached or scrambled</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Veggie Breakfast</b></span><span class="price">&pound;—</span></div>
+  </section>
+
+  <section>
+    <h2>Lunch</h2>
+    <p class="sub">Sandwiches, toasties &amp; more</p>
+    <div class="row"><span class="name"><b>Suffolk Ham Sandwich</b><span class="desc">with salad</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Cheese &amp; Chutney Sandwich</b><span class="desc">from the deli counter</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Toastie of the Day</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Soup of the Day</b><span class="desc">with bread</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Quiche &amp; Salad</b><span class="desc">homemade</span></span><span class="price">&pound;—</span></div>
+  </section>
+
+  <section>
+    <h2>From the Deli Counter</h2>
+    <p class="sub">To take home</p>
+    <div class="row"><span class="name"><b>Cheese Selection</b><span class="desc">ask for a sample &amp; a recommendation</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Homemade Sausage Rolls</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Cured Meats &amp; Suffolk Ham</b><span class="desc">sliced to order</span></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Jams &amp; Chutneys</b></span><span class="price">&pound;—</span></div>
+  </section>
+
+  <section>
+    <h2>Cakes &amp; Sweet Treats</h2>
+    <p class="sub">Homemade &middot; ask what's on today</p>
+    <div class="row"><span class="name"><b>Cake of the Day</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Scone with Jam</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Pastries</b></span><span class="price">&pound;—</span></div>
+  </section>
+
+  <section>
+    <h2>Coffee &amp; Tea</h2>
+    <div class="row"><span class="name"><b>Americano</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Latte</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Cappuccino</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Flat White</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Pot of Tea</b></span><span class="price">&pound;—</span></div>
+    <div class="row"><span class="name"><b>Hot Chocolate</b></span><span class="price">&pound;—</span></div>
+  </section>
+
+  <p class="note">Everything is made fresh and to order. Please tell us of any allergies, intolerances or dietary requirements &mdash; we're a small kitchen and cannot guarantee against allergen cross-contamination.</p>
+
+  <div class="back">
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <footer>
+    21 High Street, Manningtree, CO11 1AG &middot; 01206 395071
+  </footer>
+</body>
+</html>

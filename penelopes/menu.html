@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu &mdash; Penelope's Cafe Manningtree</title>
+<style>
+  :root{ --bg:#f7f4ec; --ink:#33402f; --soft:#6f7a68; --accent:#4f6650; --accent2:#c9a85c; --card:#fffefb; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+  header{ display:flex; justify-content:space-between; align-items:center; padding:18px 28px; border-bottom:2px solid var(--accent2); }
+  header .logo{ font-size:24px; font-weight:bold; letter-spacing:1px; color:var(--accent); }
+  header nav a{ color:var(--soft); text-decoration:none; margin-left:18px; font-size:15px; }
+  header nav a:hover{ color:var(--accent); }
+  .hero{ text-align:center; padding:46px 24px 24px; }
+  .hero h1{ font-size:42px; color:var(--accent); }
+  .hero p{ color:var(--soft); font-size:18px; }
+  section{ max-width:760px; margin:0 auto; padding:26px 24px; }
+  h2{ color:var(--accent); font-size:26px; margin-bottom:6px; border-bottom:2px solid var(--accent2); padding-bottom:8px; }
+  .sub{ color:var(--soft); font-style:italic; margin:14px 0 8px; font-size:16px; }
+  .row{ display:flex; justify-content:space-between; align-items:baseline; padding:9px 0; border-bottom:1px dotted #dde0cf; }
+  .name{ display:flex; flex-direction:column; padding-right:16px; }
+  .name b{ font-size:17px; font-weight:bold; }
+  .name .desc{ font-size:14px; color:var(--soft); font-style:italic; }
+  .price{ color:var(--accent); font-weight:bold; font-size:16px; white-space:nowrap; }
+  .note{ max-width:760px; margin:0 auto; padding:16px 24px; color:var(--soft); font-size:14px; font-style:italic; text-align:center; }
+  .back{ text-align:center; padding:36px 24px; }
+  .back a{ display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:14px 30px; border-radius:30px; font-size:17px;
+    box-shadow:0 5px 0 #3a4d3b; transition:transform .1s ease, box-shadow .1s ease, background .2s ease; }
+  .back a:hover{ background:#5d7a5e; transform:translateY(-2px); box-shadow:0 7px 0 #3a4d3b; }
+  .back a:active{ transform:translateY(4px); box-shadow:0 1px 0 #3a4d3b; }
+  footer{ background:#3a4d3b; color:#eef2e6; text-align:center; padding:30px 24px; font-size:15px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Penelope's</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#find">Find Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Our Menu</h1>
+    <p>Homemade and fresh every day</p>
+  </div>
+
+  <section>
+    <h2>Breakfast</h2>
+    <p class="sub">A fresh start to the morning</p>
+    <div class="row"><span class="name"><b>Bacon Sandwich</b><span class="desc">on fresh bread or a roll</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Sausage Sandwich</b><span class="desc">on fresh bread or a roll</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Eggs on Toast</b></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Toast &amp; Preserves</b></span><span class="price"></span></div>
+  </section>
+
+  <section>
+    <h2>Lunch &amp; Light Bites</h2>
+    <p class="sub">Freshly made to order</p>
+    <div class="row"><span class="name"><b>Sandwiches</b><span class="desc">a choice of fresh fillings</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Toasties</b></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Soup of the Day</b><span class="desc">served with bread</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Sausage Roll</b></span><span class="price"></span></div>
+  </section>
+
+  <section>
+    <h2>Homemade Cakes &amp; Bakes</h2>
+    <p class="sub">Our counter changes through the week &mdash; just ask what's fresh</p>
+    <div class="row"><span class="name"><b>Cakes &amp; Sponges</b><span class="desc">a slice of something homemade</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Traybakes</b><span class="desc">brownies, flapjack, millionaire's shortbread &amp; more</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Scones</b><span class="desc">with jam &amp; cream</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Biscuits &amp; Cookies</b></span><span class="price"></span></div>
+  </section>
+
+  <section>
+    <h2>Drinks</h2>
+    <p class="sub">Hot &amp; cold</p>
+    <div class="row"><span class="name"><b>Coffee</b><span class="desc">latte, cappuccino, americano, flat white</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Tea</b><span class="desc">a proper pot of tea &amp; herbal teas</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Hot Chocolate</b></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Cold Drinks</b><span class="desc">soft drinks &amp; juices</span></span><span class="price"></span></div>
+  </section>
+
+  <p class="note">This is a sample menu put together for a demo website &mdash; dishes and prices need to be confirmed by Penelope's. Please tell us about any allergies or dietary requirements.</p>
+
+  <div class="back">
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <footer>
+    21 Stour Street, Manningtree, CO11 1DH
+  </footer>
+</body>
+</html>
